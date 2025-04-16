@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mental Health Support</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <h1>🌿 Mental Health Supporter 🌿</h1>
+        <p>Your personal guide to mental wellness</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#anxiety">Anxiety</a></li>
+            <li><a href="#depression">Depression</a></li>
+            <li><a href="#Therapy">Therapy</a></li>
+            <li><a href="#Meditation">Meditation</a></li>
+            <li><a href="#shlokas">Hindi Shlokas</a></li>
+        </ul>
+    </nav>
+
+    <section id="anxiety" class="section">
+        <h2>Dealing with Anxiety</h2>
+        <p>Anxiety can be overwhelming, but mindfulness and breathing exercises can help.</p>
+        <button onclick="showSolution('anxiety')">Get Solution</button>
+        <p id="anxiety-solution" class="solution"></p>
+    </section>
+
+    <section id="depression" class="section">
+        <h2>Overcoming Depression</h2>
+        <p>Depression can make you feel alone, but small steps can lead to improvement.</p>
+        <button onclick="showSolution('depression')">Get Solution</button>
+        <p id="depression-solution" class="solution"></p>
+    </section>
+
+    <section id="Music for Relaxation" class="section">
+        <h2>Music For Relaxation</h2>
+        <p>Relax your mind with soothing music.</p>
+        <audio id="player" controls></audio>
+    
+        <div>
+            <button onclick="prevSong()">⏮️ Previous</button>
+            <button onclick="playSong()">▶️ Play</button>
+            <button onclick="pauseSong()">⏸️ Pause</button>
+            <button onclick="nextSong()">⏭️ Next</button>
+          </div>
+
+          <div id="songTitle"></div>
+
+        
+    </section>
+
+    <section id="Meditation" class="section">
+        <title>One Minute Timer</title>
+        <h2>Meditation</h2>
+        <p>Breathing Exercise in 1 Min.</p>
+        <h1>Countdown Timer</h1>
+        <div id="timer">01:00</div>
+        <button onclick="startTimer()">Start</button>
+        <button onclick="resetTimer()">Restart</button>
+
+    </section>
+
+    <section id="shlokas" class="section">
+        <h2>Shlokas for Peace</h2>
+        <p>Ancient wisdom can bring peace. Read these powerful Sanskrit shlokas.</p>
+        <button onclick="showShloka()">Show Shloka</button>
+        <p id="shloka-text" class="solution"></p>
+    </section>
+
+    <footer>
+        <p>Made with ❤️ for mental wellness | Stay Strong!</p>
+    </footer>
+
+    <audio id="meditation-music" loop>
+        <source src="meditation.mp3" type="audio/mpeg">
+    </audio>
+
+</body>
+</html>
